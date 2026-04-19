@@ -285,8 +285,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1) }
-            50% { opacity: 0.5; transform: scale(0.8) }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(0.8)
+            }
         }
 
         h1.hero-name {
@@ -1147,13 +1156,27 @@
 
         /* ── ANIMATIONS ── */
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes slideLeft {
-            from { opacity: 0; transform: translateX(20px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         .reveal {
@@ -1167,9 +1190,17 @@
             transform: none;
         }
 
-        .reveal-d1 { transition-delay: 0.1s; }
-        .reveal-d2 { transition-delay: 0.2s; }
-        .reveal-d3 { transition-delay: 0.3s; }
+        .reveal-d1 {
+            transition-delay: 0.1s;
+        }
+
+        .reveal-d2 {
+            transition-delay: 0.2s;
+        }
+
+        .reveal-d3 {
+            transition-delay: 0.3s;
+        }
 
         /* ════════════════════════════════════════
            RESPONSIVE BREAKPOINTS
@@ -1640,13 +1671,16 @@
         <div class="about-grid">
             <div class="about-text reveal">
                 <p>I'm <strong>Varun Chavda</strong>, a DevOps Engineer based in Ahmedabad, India. I am a DevOps and
-                    Cloud enthusiast with practical experience in <strong>server management, AWS, Docker, and CI/CD</strong>.
+                    Cloud enthusiast with practical experience in <strong>server management, AWS, Docker, and
+                        CI/CD</strong>.
                 </p>
                 <p>I enjoy building reliable systems, automating deployments, and contributing to smooth project
-                    delivery. My work spans hosted and scaled live websites on AWS, implementing CI/CD pipelines, managing
+                    delivery. My work spans hosted and scaled live websites on AWS, implementing CI/CD pipelines,
+                    managing
                     containerized environments, and deploying full-stack applications in production.</p>
                 <p>Currently at <strong>SrashtaSoft</strong>, I work hands-on with AWS infrastructure, Jenkins, GitHub
-                    Actions, Docker, and more — always focused on high availability, reliability, and operational excellence.</p>
+                    Actions, Docker, and more — always focused on high availability, reliability, and operational
+                    excellence.</p>
             </div>
             <div class="about-values reveal reveal-d2">
                 <div class="value-item">
@@ -1677,7 +1711,8 @@
                     <div class="value-num">04</div>
                     <div>
                         <div class="value-title">Security & Observability</div>
-                        <div class="value-desc">Integrating SIEM tools, SSL configurations, monitoring, and CloudWatch for
+                        <div class="value-desc">Integrating SIEM tools, SSL configurations, monitoring, and CloudWatch
+                            for
                             full-stack visibility and security.</div>
                     </div>
                 </div>
@@ -1776,7 +1811,8 @@
                     <li>Managed on-premises production containers using Docker and Docker Compose.</li>
                     <li>Hosted and managed WordPress websites on AWS and WebHost, including setup, deployment, DNS
                         management, and WordPress website migration.</li>
-                    <li>Contributed to live projects by managing deployments, domain setups, and SSL configurations.</li>
+                    <li>Contributed to live projects by managing deployments, domain setups, and SSL configurations.
+                    </li>
                     <li>Managed on-premise servers hosting multiple websites in Docker containers, with monitoring for
                         performance and availability.</li>
                 </ul>
@@ -1786,26 +1822,31 @@
                     <div class="proj-mini">
                         <div class="proj-mini-name">🔒 Automated PCAP Analysis Pipeline using AWS & Suricata</div>
                         <div class="proj-mini-desc">Built an event-driven security pipeline where network PCAP files
-                            uploaded to Amazon S3 trigger AWS Lambda to process data using a Suricata Docker image stored in Amazon
-                            ECR. Executed Suricata analysis inside containers and streamed generated EVE JSON security logs to Amazon
+                            uploaded to Amazon S3 trigger AWS Lambda to process data using a Suricata Docker image
+                            stored in Amazon
+                            ECR. Executed Suricata analysis inside containers and streamed generated EVE JSON security
+                            logs to Amazon
                             CloudWatch for centralized monitoring.</div>
                     </div>
                     <div class="proj-mini">
                         <div class="proj-mini-name">🌐 Merizimmedari</div>
                         <div class="proj-mini-desc">Deployed a React + Django project on server using Docker for
-                            containerization, configured Nginx with SSL on both development and live servers. Created Jenkins pipeline for both
+                            containerization, configured Nginx with SSL on both development and live servers. Created
+                            Jenkins pipeline for both
                             development and production environments.</div>
                     </div>
                     <div class="proj-mini">
                         <div class="proj-mini-name">📺 Digital Signage</div>
                         <div class="proj-mini-desc">Deployed a React + Django project on server using Docker for
-                            containerization, configured Nginx with SSL on both development and live servers. Created Jenkins pipeline for the
+                            containerization, configured Nginx with SSL on both development and live servers. Created
+                            Jenkins pipeline for the
                             development server.</div>
                     </div>
                     <div class="proj-mini">
                         <div class="proj-mini-name">🛡️ Suricata Integration with Kibana</div>
                         <div class="proj-mini-desc">Integrated SIEM tool to scan network and analyze captured data.
-                            Generated eve.json logs and forwarded them to Kibana dashboard for visualization. Deployed the entire
+                            Generated eve.json logs and forwarded them to Kibana dashboard for visualization. Deployed
+                            the entire
                             stack using Docker.</div>
                     </div>
                     <div class="proj-mini">
@@ -1826,7 +1867,7 @@
             <div class="section-rule"></div>
         </div>
         <div class="projects-grid reveal">
-            <a href="#" class="proj-card">
+            <!-- <a href="#" class="proj-card">
                 <div class="proj-card-top">
                     <div class="proj-num">01</div>
                     <div class="proj-arrow">↗</div>
@@ -1843,17 +1884,19 @@
                     <span class="proj-badge">Suricata</span>
                     <span class="proj-badge">CloudWatch</span>
                 </div>
-            </a>
+            </a> -->
             <a href="#" class="proj-card">
                 <div class="proj-card-top">
-                    <div class="proj-num">02</div>
+                    <div class="proj-num">01</div>
                     <div class="proj-arrow">↗</div>
                 </div>
                 <div class="proj-type">Infrastructure · CI/CD</div>
                 <div class="proj-title">Strapi Application on AWS ECS Fargate</div>
                 <p class="proj-desc">Containerized Strapi CMS with Docker & Docker Compose using Amazon RDS PostgreSQL.
-                    Provisioned full AWS infrastructure with Terraform — ECS cluster, ALB, RDS, IAM roles. Built CI/CD pipelines
-                    with GitHub Actions automating image builds, ECR pushes, and Terraform deployments. Integrated CloudWatch
+                    Provisioned full AWS infrastructure with Terraform — ECS cluster, ALB, RDS, IAM roles. Built CI/CD
+                    pipelines
+                    with GitHub Actions automating image builds, ECR pushes, and Terraform deployments. Integrated
+                    CloudWatch
                     monitoring for ECS observability.</p>
                 <div class="proj-tech">
                     <span class="proj-badge">Terraform</span>
@@ -1867,7 +1910,7 @@
                     <span class="proj-badge">CloudWatch</span>
                 </div>
             </a>
-            <a href="#" class="proj-card">
+            <!-- <a href="#" class="proj-card">
                 <div class="proj-card-top">
                     <div class="proj-num">03</div>
                     <div class="proj-arrow">↗</div>
@@ -1883,8 +1926,8 @@
                     <span class="proj-badge">ELK Stack</span>
                     <span class="proj-badge">Docker</span>
                 </div>
-            </a>
-            <a href="#" class="proj-card">
+            </a> -->
+            <!-- <a href="#" class="proj-card">
                 <div class="proj-card-top">
                     <div class="proj-num">04</div>
                     <div class="proj-arrow">↗</div>
@@ -1902,7 +1945,7 @@
                     <span class="proj-badge">Django</span>
                     <span class="proj-badge">SSL</span>
                 </div>
-            </a>
+            </a> -->
         </div>
     </div>
 
@@ -1967,7 +2010,8 @@
                 </div>
                 <div class="cf2-group">
                     <label class="cf2-label">Subject</label>
-                    <input type="text" id="cf-subject" class="cf2-input" placeholder="Role / Collaboration / Consulting" />
+                    <input type="text" id="cf-subject" class="cf2-input"
+                        placeholder="Role / Collaboration / Consulting" />
                 </div>
                 <div class="cf2-group">
                     <label class="cf2-label">Message</label>
